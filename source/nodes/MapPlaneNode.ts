@@ -9,7 +9,7 @@ export class MapPlaneNode extends MapNode
 {
 	public constructor(parentNode = null, mapView = null, location = QuadTreePosition.root, level = 0, x = 0, y = 0) 
 	{
-		super(parentNode, mapView, location, level, x, y, MapPlaneNode.geometry, new MeshBasicMaterial({wireframe: false}));
+		super(parentNode, mapView, location, level, x, y, MapPlaneNode.geometry, new MeshBasicMaterial({wireframe: false, toneMapped: false}));
 
 		this.matrixAutoUpdate = false;
 		this.isMesh = true;
